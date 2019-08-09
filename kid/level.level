@@ -1,0 +1,62 @@
+level
+{
+   name boomboomPOW;
+   actor { type background; name bg; x 0.0; y 0.0; }
+
+   actor { type themechange; name TC; x 05.00000; y 03.00000; }
+
+   actor { type page1; name Lpage; id 0; x 18.00000; y 03.00000; }
+   actor { type page2; name Lpage; id 1; x 22.00000; y 03.00000; }
+   actor { type page3; name Lpage; id 2; x 26.00000; y 03.00000; }
+   actor { type page4; name Lpage; id 3; x 30.00000; y 03.00000; }
+
+   actor { type temposlower; name BtD; x 01.50000; y 32.00000; }
+   actor { type light-blue; name Lt;  x 05.50000; y 32.00000; }
+   actor { type tempofaster; name BtU; x 09.50000; y 32.00000; }
+
+   actor { type light-orange; name Lp;  x 32.00000; y 32.00000; }
+   actor { type play; name Bplay; x 36.00000; y 32.00000; }
+   actor { type pause; name Bpp;  x 40.00000; y 32.00000; }
+   actor { type stop; name Bstop; x 44.00000; y 32.00000; }
+
+   actor { type trackA;  name LaT; id 0; x 03.00000; y 10.0000; }
+   actor { type light-b; name La1; id 0; x 07.50000; y 10.0000; }
+   actor { type light-b; name La2; id 1; x 12.50000; y 10.0000; }
+   actor { type light-b; name La3; id 2; x 17.50000; y 10.0000; }
+   actor { type light-b; name La4; id 3; x 22.50000; y 10.0000; }
+   actor { type light-b; name La5; id 4; x 27.50000; y 10.0000; }
+   actor { type light-b; name La6; id 5; x 32.50000; y 10.0000; }
+   actor { type light-b; name La7; id 6; x 37.50000; y 10.0000; }
+   actor { type light-b; name La8; id 7; x 42.50000; y 10.0000; }
+
+   actor { type trackB;  name LaT; id 1; x 03.00000; y 15.0000; }
+   actor { type light-p; name Lb1; id 0; x 07.50000; y 15.0000; }
+   actor { type light-p; name Lb2; id 1; x 12.50000; y 15.0000; }
+   actor { type light-p; name Lb3; id 2; x 17.50000; y 15.0000; }
+   actor { type light-p; name Lb4; id 3; x 22.50000; y 15.0000; }
+   actor { type light-p; name Lb5; id 4; x 27.50000; y 15.0000; }
+   actor { type light-p; name Lb6; id 5; x 32.50000; y 15.0000; }
+   actor { type light-p; name Lb7; id 6; x 37.50000; y 15.0000; }
+   actor { type light-p; name Lb8; id 7; x 42.50000; y 15.0000; }
+
+   actor { type trackC;  name LaT; id 2; x 03.00000; y 20.0000; }
+   actor { type light-o; name Lc1; id 0; x 07.50000; y 20.0000; }
+   actor { type light-o; name Lc2; id 1; x 12.50000; y 20.0000; }
+   actor { type light-o; name Lc3; id 2; x 17.50000; y 20.0000; }
+   actor { type light-o; name Lc4; id 3; x 22.50000; y 20.0000; }
+   actor { type light-o; name Lc5; id 4; x 27.50000; y 20.0000; }
+   actor { type light-o; name Lc6; id 5; x 32.50000; y 20.0000; }
+   actor { type light-o; name Lc7; id 6; x 37.50000; y 20.0000; }
+   actor { type light-o; name Lc8; id 7; x 42.50000; y 20.0000; }
+
+   actor { type trackD;  name LaT; id 3; x 03.00000; y 25.0000; }
+   actor { type light-r; name Ld1; id 0; x 07.50000; y 25.0000; }
+   actor { type light-r; name Ld2; id 1; x 12.50000; y 25.0000; }
+   actor { type light-r; name Ld3; id 2; x 17.50000; y 25.0000; }
+   actor { type light-r; name Ld4; id 3; x 22.50000; y 25.0000; }
+   actor { type light-r; name Ld5; id 4; x 27.50000; y 25.0000; }
+   actor { type light-r; name Ld6; id 5; x 32.50000; y 25.0000; }
+   actor { type light-r; name Ld7; id 6; x 37.50000; y 25.0000; }
+   actor { type light-r; name Ld8; id 7; x 42.50000; y 25.0000; }
+}
+

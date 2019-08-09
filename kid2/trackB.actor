@@ -1,0 +1,54 @@
+actor
+{
+   type trackB;
+   graphic
+   {
+      show 1;
+      mesh "";
+      texture "trackB.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,3.5, 3.5,3.5, 3.5,0.0;
+      tverts 0.0,0.0, 0.0,1.0, 1.0,1.0, 1.0,0.0;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "trackB.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,3.5, 3.5,3.5, 3.5,0.0;
+      tverts 0.0,0.0, 0.0,1.0, 1.0,1.0, 1.0,0.0;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "trackB.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,3.5, 3.5,3.5, 3.5,0.0;
+      tverts 0.0,0.0, 0.0,1.0, 1.0,1.0, 1.0,0.0;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "trackB.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,3.5, 3.5,3.5, 3.5,0.0;
+      tverts 0.0,0.0, 0.0,1.0, 1.0,1.0, 1.0,0.0;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "trackB.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,3.5, 3.5,3.5, 3.5,0.0;
+      tverts 0.0,0.0, 0.0,1.0, 1.0,1.0, 1.0,0.0;
+   }
+}

@@ -1,0 +1,54 @@
+actor
+{
+   type selected-note;
+   graphic
+   {
+      show 1;
+      mesh "";
+      texture "lit-blue.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,4.0, 4.0,4.0, 4.0,0.0;
+      tverts 0.0,0.0, 0.0,1.0, 1.0,1.0, 1.0,0.0;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "lit-blue.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,4.0, 4.0,4.0, 4.0,0.0;
+      tverts 0.0,0.0, 0.0,1.0, 1.0,1.0, 1.0,0.0;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "lit-blue.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,4.0, 4.0,4.0, 4.0,0.0;
+      tverts 0.0,0.0, 0.0,1.0, 1.0,1.0, 1.0,0.0;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "lit-blue.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,4.0, 4.0,4.0, 4.0,0.0;
+      tverts 0.0,0.0, 0.0,1.0, 1.0,1.0, 1.0,0.0;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "lit-blue.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,4.0, 4.0,4.0, 4.0,0.0;
+      tverts 0.0,0.0, 0.0,1.0, 1.0,1.0, 1.0,0.0;
+   }
+}

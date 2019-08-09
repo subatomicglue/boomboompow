@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6D611223-5AFA-4E3E-9722-9827528CB8E1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SDL</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BEE29D3F-8756-4301-A26B-7FB3BB23AF7E</key>
+		<string>svn+ssh://fire/home/svn/boomboompow/boomboompow</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>sdl-deleteme/b/SDL2-2.0.1/Xcode-iOS/SDL/SDL.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BEE29D3F-8756-4301-A26B-7FB3BB23AF7E</key>
+		<string>../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>BEE29D3F-8756-4301-A26B-7FB3BB23AF7E</key>
+		<string>svn+ssh://fire/home/svn/boomboompow</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn+ssh://fire/home/svn/boomboompow/boomboompow/sdl-deleteme/b/SDL2-2.0.1/Xcode-iOS/SDL/SDL.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BEE29D3F-8756-4301-A26B-7FB3BB23AF7E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BEE29D3F-8756-4301-A26B-7FB3BB23AF7E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>boomboompow</string>
+		</dict>
+	</array>
+</dict>
+</plist>

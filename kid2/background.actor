@@ -1,0 +1,56 @@
+actor
+{
+   type background;
+   ui 0;
+   graphic
+   {
+      show 1;
+      mesh "";
+      texture "boomboompow-bg-1024.jpg";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.000,0.000, 0.000,37.5, 50.000,37.5,  50.000,0.000;
+      tverts 0.000,0.000, 0.000,1.000, 1.000,1.000, 1.000,0.000;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "page1-mouseover.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.000,0.000, 0.000,37.5, 50.000,37.5,  50.000,0.000;
+      tverts 0.000,0.000, 0.000,1.000, 1.000,1.000, 1.000,0.000;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "page2-mouseover.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.000,0.000, 0.000,37.5, 50.000,37.5,  50.000,0.000;
+      tverts 0.000,0.000, 0.000,1.000, 1.000,1.000, 1.000,0.000;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "page3-mouseover.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.000,0.000, 0.000,37.5, 50.000,37.5,  50.000,0.000;
+      tverts 0.000,0.000, 0.000,1.000, 1.000,1.000, 1.000,0.000;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "page4-mouseover.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.000,0.000, 0.000,37.5, 50.000,37.5,  50.000,0.000;
+      tverts 0.000,0.000, 0.000,1.000, 1.000,1.000, 1.000,0.000;
+   }
+}
+

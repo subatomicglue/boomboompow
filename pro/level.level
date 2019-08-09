@@ -1,0 +1,62 @@
+level
+{
+   name boomboomPOW;
+   actor { type background; name bg; x 0.0; y 0.0; }
+
+   actor { type themechange; name TC; x 05.00000; y 03.00000; }
+
+   actor { type page1; name Lpage; id 0; x 15.00000; y 03.00000; }
+   actor { type page2; name Lpage; id 1; x 19.00000; y 03.00000; }
+   actor { type light-orange; name Bpage; x 23.00000; y 03.00000; }
+   actor { type page3; name Lpage; id 2; x 27.00000; y 03.00000; }
+   actor { type page4; name Lpage; id 3; x 31.00000; y 03.00000; }
+
+   actor { type temposlower; name BtD; x 01.50000; y 32.00000; }
+   actor { type light-blue; name Lt;  x 05.50000; y 32.00000; }
+   actor { type tempofaster; name BtU; x 09.50000; y 32.00000; }
+
+   actor { type playpause; name Bpp; x 36.00000; y 32.00000; }
+   actor { type light-orange; name Lp;  x 40.00000; y 32.00000; }
+   actor { type playstop; name Bps; x 44.00000; y 32.00000; }
+
+   actor { type trackA;       name LaT; id 0; x 03.00000; y 10.000000; }
+   actor { type light-orange; name La1; id 0; x 07.50000; y 10.000000; }
+   actor { type light-orange; name La2; id 1; x 12.50000; y 10.000000; }
+   actor { type light-orange; name La3; id 2; x 17.50000; y 10.000000; }
+   actor { type light-orange; name La4; id 3; x 22.50000; y 10.000000; }
+   actor { type light-orange; name La5; id 4; x 27.50000; y 10.000000; }
+   actor { type light-orange; name La6; id 5; x 32.50000; y 10.000000; }
+   actor { type light-orange; name La7; id 6; x 37.50000; y 10.000000; }
+   actor { type light-orange; name La8; id 7; x 42.50000; y 10.000000; }
+
+   actor { type trackB;       name LaT; id 1; x 03.00000; y 15.000000; }
+   actor { type light-orange; name Lb1; id 0; x 07.50000; y 15.00000; }
+   actor { type light-orange; name Lb2; id 1; x 12.50000; y 15.00000; }
+   actor { type light-orange; name Lb3; id 2; x 17.50000; y 15.00000; }
+   actor { type light-orange; name Lb4; id 3; x 22.50000; y 15.00000; }
+   actor { type light-orange; name Lb5; id 4; x 27.50000; y 15.00000; }
+   actor { type light-orange; name Lb6; id 5; x 32.50000; y 15.00000; }
+   actor { type light-orange; name Lb7; id 6; x 37.50000; y 15.00000; }
+   actor { type light-orange; name Lb8; id 7; x 42.50000; y 15.00000; }
+
+   actor { type trackC;       name LaT; id 2; x 03.00000; y 20.000000; }
+   actor { type light-orange; name Lc1; id 0; x 07.50000; y 20.0000; }
+   actor { type light-orange; name Lc2; id 1; x 12.50000; y 20.0000; }
+   actor { type light-orange; name Lc3; id 2; x 17.50000; y 20.0000; }
+   actor { type light-orange; name Lc4; id 3; x 22.50000; y 20.0000; }
+   actor { type light-orange; name Lc5; id 4; x 27.50000; y 20.0000; }
+   actor { type light-orange; name Lc6; id 5; x 32.50000; y 20.0000; }
+   actor { type light-orange; name Lc7; id 6; x 37.50000; y 20.0000; }
+   actor { type light-orange; name Lc8; id 7; x 42.50000; y 20.0000; }
+
+   actor { type trackD;       name LaT; id 3; x 03.00000; y 25.000000; }
+   actor { type light-orange; name Ld1; id 0; x 07.50000; y 25.00000; }
+   actor { type light-orange; name Ld2; id 1; x 12.50000; y 25.00000; }
+   actor { type light-orange; name Ld3; id 2; x 17.50000; y 25.00000; }
+   actor { type light-orange; name Ld4; id 3; x 22.50000; y 25.00000; }
+   actor { type light-orange; name Ld5; id 4; x 27.50000; y 25.00000; }
+   actor { type light-orange; name Ld6; id 5; x 32.50000; y 25.00000; }
+   actor { type light-orange; name Ld7; id 6; x 37.50000; y 25.00000; }
+   actor { type light-orange; name Ld8; id 7; x 42.50000; y 25.00000; }
+}
+

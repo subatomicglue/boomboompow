@@ -1,0 +1,11 @@
+prefix=/Users/kevin/src/boomboompow/3rdparty/libsamplerate-0.1.8/installed
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: samplerate
+Description: An audio Sample Rate Conversion library
+Requires: 
+Version: 0.1.8
+Libs: -L${libdir} -lsamplerate
+Cflags: -I${includedir} 

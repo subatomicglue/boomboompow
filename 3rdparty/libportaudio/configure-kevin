@@ -1,0 +1,17 @@
+#!/bin/bash
+
+unamestr=`uname`
+echo "configuring for $unamestr"
+if [[ "$unamestr" == 'Linux' ]]; then
+   ./configure --prefix="`pwd`/installed" --enable-cxx --without-oss
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   #--disable-shared --disable-mac-debug.
+   # version: v19_20111121
+   # & i uncommented #include <AudioToolbox/AudioToolbox.h> in pa_mac_core.h
+   # if errors about warnings, remove -Werror from configure.in and configure
+   export CC=llvm-gcc
+   export CXX=llvm-g++
+   export CFLAGS= -O3 -arch x86_64 -mno-thumb
+   export CXXFLAGS= -O3 -arch x86_64 -mno-thumb
+   ./configure --prefix="`pwd`/installed" --enable-cxx --disable-debug --disable-dependency-tracking --disable-mac-universal --enable-libtool-lock
+fi

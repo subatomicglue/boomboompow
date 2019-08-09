@@ -1,0 +1,12 @@
+#!/bin/sh
+
+
+unamestr=`uname`
+echo "configuring for $unamestr"
+if [[ "$unamestr" == 'Linux' ]]; then
+   sudo ./bbp.exe
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   rm -rf /cores/core*
+   lldb ./BoomBoomPow.exe
+fi
+

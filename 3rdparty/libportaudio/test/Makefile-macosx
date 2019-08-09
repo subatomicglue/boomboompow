@@ -1,0 +1,7 @@
+
+MAC_FRAMEWORKS=-framework CoreAudio -framework CoreServices -framework AudioToolbox -framework AudioUnit -framework Carbon
+
+all:
+	g++ -I../include -c patest_sine8.c -o patest_sine8.o
+	g++ -I../include patest_sine8.o -o patest_sine8 ../lib/.libs/libportaudio.a $(MAC_FRAMEWORKS)
+

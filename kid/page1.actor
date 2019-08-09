@@ -1,0 +1,54 @@
+actor
+{
+   type page1;
+   graphic
+   {
+      show 1;
+      mesh "";
+      texture "page1-unlit.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,2, 3,2, 3,0;
+      tverts 0.015,0.1, 0.015,0.9, 0.64,0.9, 0.64,0.1;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "page1-mouseover.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,2, 3,2, 3,0;
+      tverts 0.015,0.1, 0.015,0.9, 0.64,0.9, 0.64,0.1;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "page1-lit.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,2, 3,2, 3,0;
+      tverts 0.015,0.1, 0.015,0.9, 0.64,0.9, 0.64,0.1;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "page1-lit.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,2, 3,2, 3,0;
+      tverts 0.015,0.1, 0.015,0.9, 0.64,0.9, 0.64,0.1;
+   }
+   graphic
+   {
+      show 0;
+      mesh "";
+      texture "page-blink.tga";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.0,0.0, 0.0,2, 3,2, 3,0;
+      tverts 0.015,0.1, 0.015,0.9, 0.64,0.9, 0.64,0.1;
+   }
+}

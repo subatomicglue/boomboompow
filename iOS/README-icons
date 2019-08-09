@@ -1,0 +1,170 @@
+
+each icon file that you include must be listed in the Icon files entry in the Info.plist. 
+
+Icon files
+CFBundleIcons
+
+Older projects might include the CFBundleIconFiles key instead
+Regardless of how many different icons your app has, you specify them using the CFBundleIcons key in the Info.plist file. The value of that key is an array of strings, each of which contains the filename of one of your icons. The filenames can be anything you want, but all image files must be in the PNG format and must reside in the top level of your app bundle. (Avoid using interlaced PNGs.) When the system needs an icon, it choose the image file whose size most closely matches the intended usage.
+
+iPhone-only Apps
+512x512	iTunesArtwork	App list in iTunes	Do not include	Optional but recommended
+1024x1024	iTunesArtwork@2x	App list in iTunes for devices with retina display	Do not include	Optional but recommended
+57x57	Icon.png	App Store and Home screen on iPhone/iPod touch	Required	Required
+114x114	Icon@2x.png	Home screen for iPhone with retina display	Optional but recommended	Optional but recommended
+72x72	Icon-72.png	Home screen for iPad compatibility	Optional but recommended	Optional but recommended
+144x144	Icon-72@2x.png	Home screen for iPad with retina display compatibility	Optional but recommended	Optional but recommended
+29x29	Icon-Small.png	Spotlight and Settings	Recommended if you have a Settings bundle, otherwise optional but recommended	Recommended if you have a Settings bundle, otherwise optional but recommended
+58x58	Icon-Small@2x.png	Spotlight and Settings for iPhone with retina display	Recommended if you have a Settings bundle, otherwise optional but recommended	Recommended if you have a Settings bundle, otherwise optional but recommended
+50x50	Icon-Small-50.png	Spotlight for iPad compatibility	Optional but recommended	Optional but recommended
+100x100	Icon-Small-50@2x.png	Spotlight for iPad with retina display compatibility	Optional but recommended	Optional but recommended
+
+iPad-only Apps
+512x512	iTunesArtwork	Ad Hoc iTunes	Do not include	Optional but recommended
+1024x1024	iTunesArtwork@2x	Ad Hoc iTunes for devices with retina display	Do not include	Optional but recommended
+72x72	Icon-72.png	Home screen on iPad	Required	Required
+144x144	Icon-72@2x.png	Home screen for iPad with retina display	Optional but recommended	Optional but recommended
+29x29	Icon-Small.png	Settings on iPad	Recommended if you have a Settings bundle, otherwise optional but recommended	Recommended if you have a Settings bundle, otherwise optional but recommended
+58x58	Icon-Small@2x.png	Settings on iPad with retina display	Recommended if you have a Settings bundle, otherwise optional but recommended	Recommended if you have a Settings bundle, otherwise optional but recommended
+50x50	Icon-Small-50.png	Spotlight on iPad	Optional but recommended	Optional but recommended
+100x100	Icon-Small-50@2x.png	Spotlight on iPad with retina display	Optional but recommended	Optional but recommended
+
+Universal Apps
+512x512	iTunesArtwork	Ad Hoc iTunes	Do not include	Optional but recommended
+1024x1024	iTunesArtwork@2x	Ad Hoc iTunes for devices with retina display	Do not include	Optional but recommended
+57x57	Icon.png	App Store and Home screen on iPhone/iPod touch	Required	Required
+114x114	Icon@2x.png	Home screen for iPhone with retina display	Optional but recommended	Optional but recommended
+72x72	Icon-72.png	Home screen for iPad	Optional but recommended	Optional but recommended
+144x144	Icon-72@2x.png	Home screen for iPad with retina display	Optional but recommended	Optional but recommended
+29x29	Icon-Small.png	Spotlight and Settings	Recommended if you have a Settings bundle, otherwise optional but recommended	Recommended if you have a Settings bundle, otherwise optional but recommended
+58x58	Icon-Small@2x.png	Spotlight and Settings for iPhone with retina display	Recommended if you have a Settings bundle, otherwise optional but recommended	Recommended if you have a Settings bundle, otherwise optional but recommended
+50x50	Icon-Small-50.png	Spotlight for iPad	Optional but recommended	Optional but recommended
+100x100	Icon-Small-50@2x.png	Spotlight for iPad with retina display	Optional but recommended	Optional but recommended
+
+
+
+
+Table 5-2  Icon dimensions (iOS 7 and later)
+Icon  Idiom Size  Usage
+App icon (required)  iPhone   60 x 60 pixels This is the main icon for apps running on iPhone and iPod touch in iOS 7 and later.
+                              120 x 120 pixels (@2x)
+App icon (required)  iPad     76 x 76 pixels This is the main icon for apps running on iPad in iOS 7 and later.
+                              152 x 152 pixels (@2x)
+Spotlight search
+results icon
+(recommended)        All
+                     devices  40 x 40 pixels This is the icon displayed for Spotlight search results in iOS 7
+                              and later.
+                              80 x 80 pixels (@2x)
+Settings icon        All
+                     devices  29 x 29 pixels This is the icon used by the Settings app in iOS 7 and later.
+                              58 x 58 pixels (@2x)
+
+
+Table 5-3  Icon dimensions (iOS 6.1 and earlier)
+Icon	Idiom	Size	Usage
+App icon (required)  iPhone   57 x 57 pixels	This is the main icon for apps running on iPhone and iPod touch in iOS 6.1 and earlier.
+                              114 x 114 pixels (@2x)
+App icon (required)  iPad     72 x 72 pixels	This is the main icon for apps running on iPad.
+                              144 x 144 pixels (@2x)
+Small icon for
+Spotlight search
+results and Settings
+(recommended)        iPhone   29 x 29 pixels This is the icon displayed in conjunction with search results on
+                                      iPhone and iPod touch. This icon is also used by the Settings app on all devices.
+                              58 x 58 pixels (@2x)
+Small icon for
+Spotlight search
+results and Settings
+(recommended)        iPad     50 x 50 pixels This is the icon displayed in conjunction with search results on iPad.
+                              100 x 100 pixels (@2x)
+
+Note: For apps that run on devices with Retina displays, two versions of each icon should be provided, with the second one being a high-resolution version of the original. The names of the two icons should be the same except for the inclusion of the string @2x in the filename of the high-resolution image.
+
+When specifying icon files using the CFBundleIcons key, it is best to omit the filename extensions of your image files. If you include a filename extension, you must explicitly add the names of all image files (including any high-resolution variants). When you omit the filename extension, the system automatically detects high-resolution variants of your file, even if they are not included in the array. 
+
+If your iPhone app is running in iOS 3.1.3 or earlier, the system does not look for icons using your Info.plist file. The CFBundleIcons key was introduced in iOS 5.0 and the CFBundleIconFiles key was introduced in iOS 3.2. Instead of using these keys, the system looks for icon files with specific filenames. Although the sizes of the icons are the same as those in Table 5-2, if your app supports deployment on iOS 3.1.3 and earlier, you must use the following filenames when naming your icons:
+    Icon.png. The name for the app icon on iPhone or iPod touch.
+    Icon-72.png. The name for the app icon on iPad.
+    Icon-Small.png. The name for the search results icon on iPhone and iPod touch. This file is also used for the Settings icon on all devices.
+    Icon-Small-50.png. The name of the search results icon on iPad.
+
+Important: The use of fixed filenames for your app icons is for compatibility with earlier versions of iOS only. Even if you use these fixed icon filenames, your app should continue to include the CFBundleIcons or CFBundleIconFiles key in your app’s Info.plist file.
+
+Apps being distributed via ad-hoc distribution may also include a 512 x 512 pixel version of their icon in the CFBundleIcons key. The name of this file must be iTunesArtwork and not have a filename extension. The high resolution version of this icon should be 1024 x 1024 pixels and have the name iTunesArtwork@2x. Do not include this icon in your app bundle if you are not distributing your app via ad-hoc distribution.
+
+
+App Launch (Default) Images
+When the system launches an app on any type of device, it temporarily displays a static launch image on the screen. Your app provides this image, with the image contents usually containing a prerendered version of your app’s default user interface. The purpose of this image is to give the user immediate feedback that the app launched. It also gives your app time to initialize itself and prepare its initial set of views for display. When your app is ready to run, the system removes the image and displays your app’s windows and views.
+
+Every app must provide at least one launch image. This image is typically in a file named Default.png that displays your app’s initial screen in a portrait orientation. However, you can also provide other launch images to be used under different launch conditions. All launch images must be PNG files and you should avoid using interlaced PNGs. The name of each launch image conveys its purpose and how it is used. It is recommended that you use the following format for launch image filenames:
+
+<basename><usage_specific_modifiers><scale_modifier><device_modifier>.png
+
+The <basename> portion of the filename is either the string Default or a custom string that you specify using the UILaunchImageFile key in your app’s Info.plist file. The <scale_modifier> portion is the optional string @2x and should be included only for images intended for use on Retina displays. Other optional modifiers may also be included in the name, and several standard modifiers are discussed in the sections that follow. You must use these modifiers if your app targets iOS 6.1 or earlier.
+
+Specify the launch images for your app in your Xcode project settings. In Xcode 5.0, specify these images on the General tab of your project settings; in older versions of Xcode, this tab may have a different name. Xcode places your launch image files at the top-level of the app bundle and configures other project settings as appropriate. Specifically, Xcode adds the UILaunchImages key to your app’s Info.plist file automatically if your app runs on iOS 7 or later. That key tells the system the name of your app’s launch image files. For earlier versions of iOS, the system uses the launch image filenames to decide which image to load.
+
+Table 5-4 lists the dimensions for launch images in iOS apps. For all dimensions, the image width is listed first, followed by the image height. For precise information about which size launch image to use and how to prepare your launch images, see iOS Human Interface Guidelines.
+Table 5-4  Typical launch image dimensions
+
+Device                  Portrait                   Landscape
+iPhone and iPod touch   320 x 480 pixels           Not supported
+                        640 x 960 pixels (@2x)
+iPhone 5 and iPod touch
+(5th generation)        640 x 1136 pixels (@2x)    Not supported
+iPad                    768 x 1004 pixels          1024 x 748 pixels
+                        1536 x 2008 pixels (@2x)   2048 x 1496 pixels (@2x)
+
+iPhone (from xcode)
+Non Retina  320x480   Default~iphone
+Retina      640x960   Default@2x~iphone
+Retina 4in  640x1136  Default-568h@2x~iphone
+
+iPad (from xcode)
+Portrait  Non Retina  768x1024
+Portrait      Retina  1536x2048
+Landscape Non Retina  1024x768
+Landscape     Retina  2048x1536
+
+
+To demonstrate the naming conventions, suppose your iOS app’s Info.plist file included the UILaunchImageFile key with the value MyLaunchImage. The standard resolution version of the launch image would be named MyLaunchImage.png and would be in a portrait orientation (320 x 480). The high-resolution version of the same launch image would be named MyLaunchImage@2x.png. If you did not specify a custom launch image name, these files would need to be named Default.png and Default@2x.png, respectively.
+
+To specify default launch images for iPhone 5 and iPod touch (5th generation) devices, include the modifier string -568h immediately after the <basename> portion of the filename. Because these devices have Retina displays, the @2x modifier must always be included with launch images for the devices. For example, the default launch image name for a device is Default-568h@2x.png. (If your app has the UILaunchImageFile key in its Info.plist file, replace the Default portion of the string with your custom string.) The -568h modifier should always be the first one in the list. You can also insert other modifiers after the -568h string as described below.
+
+For more information about the UILaunchImageFile and UILaunchImages keys, see Information Property List Key Reference. You can provide localized versions of your launch images if necessary.
+Providing Launch Images for Different Orientations
+
+In iOS 3.2 and later, an iPad app can provide both landscape and portrait versions of its launch images. Each orientation-specific launch image must include a special modifier string in its filename. The format for orientation-specific launch image filenames is as follows:
+
+<basename><orientation_modifier><scale_modifier><device_modifier>.png
+
+Table 5-5 lists the possible modifiers you can specify for the <orientation_modifier> value in your image filenames. As with all launch images, each file must be in the PNG format. These modifiers are supported for launch images used in iPad apps only; they are not supported for apps running on iPhone or iPod touch devices
+
+
+Table 5-5  Launch image orientation modifiers
+Modifier                Description
+-PortraitUpsideDown     Specifies an upside-down portrait version of the launch image. A file with this modifier takes precedence over a file with the -Portrait modifier for this specific orientation.
+-LandscapeLeft          Specifies a left-oriented landscape version of the launch image. A file with this modifier takes precedence over a file with the -Landscape modifier for this specific orientation.
+-LandscapeRight         Specifies a right-oriented landscape version of the launch image. A file with this modifier takes precedence over a file with the -Landscape modifier for this specific orientation.
+-Portrait               Specifies the generic portrait version of the launch image. This image is used for right-side up portrait orientations and takes precedence over the Default.png image file (or your custom-named replacement for that file). If a file with the -PortraitUpsideDown modifier is not specified, this file is also used for upside-down portrait orientations as well.
+-Landscape              Specifies the generic landscape version of the launch image. If a file with the -LandscapeLeft or -LandscapeRight modifier is not specified, this image is used instead. This image takes precedence over the Default.png image file (or your custom-named replacement for that file).
+(none)                  If you provide a launch image file with no orientation modifier, that file is used when no other orientation-specific launch image is available. For apps running on systems earlier than iOS 3.2, you must name this file Default.png.
+
+
+For example, if you specify the value MyLaunchImage in the UILaunchImageFile key, the custom landscape and portrait launch images for your iPad app would be named MyLaunchImage-Landscape.png and MyLaunchImage-Portrait.png. If you do not specify a custom launch image filename, you would use the names Default-Landscape.png and Default-Portrait.png.
+
+No matter which launch image is displayed by the system, your app always launches in a portrait orientation initially and then rotates as needed to the correct orientation. Therefore, your application:didFinishLaunchingWithOptions: method should always assume a portrait orientation when setting up your window and views. Shortly after the application:didFinishLaunchingWithOptions: method returns, the system sends any necessary orientation-change notifications to your app’s window, giving it and your app’s view controllers a chance to reorient views using the standard process.
+
+For more information about how your view controllers manage the rotation process, see “Creating Custom Content View Controllers” in View Controller Programming Guide for iOS.
+Providing Device-Specific Launch Images
+
+Universal apps must provide launch images for both the iPhone and iPad idioms. Because iPhone apps require only one launch image in a portrait orientation, whereas iPad apps typically require different images for portrait and landscape orientations, you can usually do without device-specific modifiers. However, if you create multiple launch images for each idiom, the names of device-specific image files are likely to collide. In that situation, you can append a device modifier to filenames to indicate that they are for a specific platform only. The following device modifiers are recognized for launch images in iOS 4.0 and later:
+
+    ~ipad. The launch image should be loaded on iPad devices only.
+
+    ~iphone. The launch image should be loaded on iPhone or iPod touch devices only.
+
+Because device modifiers are not supported in iOS 3.2, the minimal set of launch images needed for a universal app (running in iOS 3.2 and later) would need to be named Default.png and Default~iphone.png. In that case, the Default.png file would contain the iPad launch image (for all orientations) and the Default~iphone.png file would contain the iPhone version of the image. (To support high-resolution displays, you would also need to include a Default@2x~iphone.png launch image.)
+
+Note: If you are using the UILaunchImageFile key in your Info.plist file to specify a custom base name for your launch image files, add device-specific versions as needed to differentiate the launch images on different devices. For example, specify a UILaunchImageFile~ipad key to specify a different base name for iPad launch images. Specifying different base names lets a universal app avoid naming conflicts among its launch images. For more information on how to apply device modifiers to keys in the Info.plist file, see Information Property List Key Reference. 

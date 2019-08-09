@@ -1,0 +1,14 @@
+actor
+{
+   type background;
+   graphic
+   {
+      mesh "";
+      texture "boomboompow-bg-1024.jpg";
+      vshader "tex.vshader";
+      fshader "tex.fshader";
+      verts 0.000,0.000, 0.000,37.5, 50.000,37.5,  50.000,0.000;
+      tverts 0.000,0.000, 0.000,1.000, 1.000,1.000, 1.000,0.000;
+   }
+}
+

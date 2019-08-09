@@ -1,0 +1,26 @@
+
+xcode will compress PNG images for iPad/iPhone optimization, so dont use PNG images with corona, unless you disable the PNG compression in the project build settings....
+
+Only use PNG images for iOS libs / xcode resources (like load screens).
+
+Use jpg files in bbp with corona....
+
+- Kevin
+
+
+
+
+advertising:
+what is all the noise about?
+find out what all the noise is about
+now is not the time to be quiet
+make your kid a genius through music and sequential thinking
+
+
+multitouch
+
+log finger change
+for each finger
+   for each widget
+      does it intersect
+

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="gmtl">
+      <UniqueIdentifier>{4feb4de2-995e-4cfe-8b8e-eb23d8f500be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gmtl\Util">
+      <UniqueIdentifier>{08488387-6a6b-4963-9b8c-4150270b4b17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dirlist.h" />
+    <ClInclude Include="..\md5\md5.h" />
+    <ClInclude Include="..\resource.h" />
+    <ClInclude Include="..\dirent-win32\dirent.h" />
+    <ClInclude Include="..\AudioData.h" />
+    <ClInclude Include="..\AudioInterface.h" />
+    <ClInclude Include="..\AudioIStream.h" />
+    <ClInclude Include="..\BuiltInText.h" />
+    <ClInclude Include="..\Clock.h" />
+    <ClInclude Include="..\Defines.h" />
+    <ClInclude Include="..\Gfx.h" />
+    <ClInclude Include="..\StepSequencer.h" />
+    <ClInclude Include="..\synMath.h" />
+    <ClInclude Include="..\UI.h" />
+    <ClInclude Include="..\gio.h" />
+    <ClInclude Include="..\Gr.h" />
+    <ClInclude Include="..\MpegAudioIStream.h" />
+    <ClInclude Include="..\OggAudioIStream.h" />
+    <ClInclude Include="..\PixmapFont.h" />
+    <ClInclude Include="..\SndFileAudioIStream.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\md5\md5.c" />
+    <ClCompile Include="..\dirent-win32\dirent.c" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\BuiltInText.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+</Project>
